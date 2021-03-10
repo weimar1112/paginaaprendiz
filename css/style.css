@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(189, 243, 119);
+    
+    
+}
+header {
+    width: 100%;
+    background: #f5faf9;
+    
+    
+}
+
+header label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+header label:hover {
+    cursor: pointer;
+    background: rgb(209, 74, 74);
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+}
+.menu li{
+    
+    flex-grow: 1;
+}
+
+.menu li:hover{
+    background: rgb(233, 119, 54);
+}
+.menu li a{
+    display: block;
+    padding: 20px 20px;
+    color: rgb(250, 255, 255);
+    text-decoration: none;
+
+
+}
+.menu{
+  margin: 0;
+}
+
+@media(max-width:768px){
+    header label{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        background: rgb(85, 245, 79);
+        width: 30px;
+        transition: all 0,5s;
+    }
+    .menu ul {
+        flex-direction: row;
+
+    }
+    .menu li{
+        border-top: 1px solid rgb(221, 30, 30);
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+
+    }
+  
+   
+
+
+
+    * {
+      box-sizing: border-box;
+    }
+    .vbar {
+      float: left;
+      width: 20%;
+      
+    }
+    .menuitem {
+      padding: 8px;
+      margin-top: 7px;
+      border-bottom: 1px solid #aec56d;
+      
+      
+    }
+    
+    .main {
+      float: left;
+      width: 60%;
+      padding: 0 20px;
+      overflow: hidden;
+     
+      
+    }
+    .right {
+      background-color: lightblue;
+      float: left;
+      width: 20%;
+      padding: 10px 15px;
+      margin-top: 7px;
+    }
+    
+    
+    }
+    
+    @media only screen and (max-width:800px) {
+      /* For tablets: */
+      .main {
+        width: 80%;
+        padding: 0;
+        background: #4de030;
+      }
+      .right {
+        width: 100%;
+      }
+    }
+    @media only screen and (max-width:500px) {
+      /* For mobile phones: */
+      .menu, .main, .right {
+        width: 100%;
+      }
+}    
+  
+
+
+  
